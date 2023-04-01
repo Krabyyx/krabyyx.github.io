@@ -2,10 +2,27 @@
 <html lang="fr">
 		<head>
 				<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 				<title>Accueil - AH!</title>
 				<link rel="stylesheet" href="CSS/Index/index-style.css">
 				<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
 			</head>
+        </head>
+        <body onload="myFunction()" style="margin:0;">
+        
+<div id="loader_5191"></div>
+  <div class="loader_5191">
+          <div class="square" id="sq1"></div>
+          <div class="square" id="sq2"></div>
+          <div class="square" id="sq3"></div>
+          <div class="square" id="sq4"></div>
+          <div class="square" id="sq5"></div>
+          <div class="square" id="sq6"></div>
+          <div class="square" id="sq7"></div>
+          <div class="square" id="sq8"></div>
+          <div class="square" id="sq9"></div>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
 			<body>
 					<h1> <span style="font-family:Impact;">Bienvenue sur le site de AH!</h1>
 					   
@@ -15,55 +32,8 @@
 							<li><a href="#contact">Contact</a></li>
 							<li style="float:right"><a class="active" href="#about">About</a></li>
 						  </ul>  
-              <style>
-                /* Style The Dropdown Button */
-                .dropbtn {
-                  background-color: #4CAF50;
-                  color: white;
-                  padding: 16px;
-                  font-size: 16px;
-                  border: none;
-                  cursor: pointer;
-                }
-                
-                /* The container <div> - needed to position the dropdown content */
-                .dropdown {
-                  position: relative;
-                  display: inline-block;
-                }
-                
-                /* Dropdown Content (Hidden by Default) */
-                .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #f9f9f9;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                  z-index: 1;
-                }
-                
-                /* Links inside the dropdown */
-                .dropdown-content a {
-                  color: black;
-                  padding: 12px 16px;
-                  text-decoration: none;
-                  display: block;
-                }
-                
-                /* Change color of dropdown links on hover */
-                .dropdown-content a:hover {background-color: #f1f1f1}
-                
-                /* Show the dropdown menu on hover */
-                .dropdown:hover .dropdown-content {
-                  display: block;
-                }
-                
-                /* Change the background color of the dropdown button when the dropdown content is shown */
-                .dropdown:hover .dropbtn {
-                  background-color: #3e8e41;
-                }
-                </style>
-                
+
+
                 <div class="dropdown">
                   <button class="dropbtn">Dropdown</button>
                   <div class="dropdown-content">
@@ -73,55 +43,27 @@
                   </div>
                 </div> 
 					<br/><p>Bienvenue sur le site qui recense et informe a propos de <strong>la plupart</strong> des projets de AH!.</p>
-					<br/><img src="images/" width="970" height="500" alt="Main image"/><br/><HR>
-					<div class="column">
-<img src='images/Index/ahserverlogo.png' width="350" height="300" alt='AH! Server logo'>  
-    <div class="info-box">
-    </div>
-  </div>
-</div>
-<div class="column">
-<br/><br/>
-<img src='images/Index/solahrlogo.png' width="350" heght="300" alt='Solahr logo'><br/>
-    <div class="info-box">
-    </div>
-  </div>
-</div>
-<header>
-<br/>
-   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</header>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="ahserver.html" class="custom-btn btn-3"><span>AH! Server</span></button><br/><a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="solahr.html" class="custom-btn btn-3"><span>Solahr</span></button><br/><a>
-  <br/>
-</div>
-<img align="left" src='images/Index/ahksyslogo.png' width="350" height="300" alt='AHKSYS logo'>  
-    <div class="info-box">
-    </div>
-  </div>
-</div>
-<div class="column">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img align="right" src='images/Index/kriboxlogo.png' width="350" heght="300" alt='Kribox logo'><br/>
-    <div class="info-box">
-    </div>
-  </div>
-</div>
-<header>
-<br/>
-   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</header>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="ahksys.html" class="custom-btn btn-3"><span>AHKSYS</span></button><br/><a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="kribox.html" class="custom-btn btn-3"><span>Kribox</span></button><br/><a>
-  <br/>
-</div>
-
-					<p style="text-align:center;">Copyright : AH!</p>
-			</body>
+					<p style="text-align:center;">Copyright : AH!</p> 
+          <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+            
+            function showPage() {
+              document.getElementById("sq1").style.display = "none";
+              document.getElementById("sq2").style.display = "none";
+              document.getElementById("sq3").style.display = "none";
+              document.getElementById("sq4").style.display = "none";
+              document.getElementById("sq5").style.display = "none";
+              document.getElementById("sq6").style.display = "none";
+              document.getElementById("sq7").style.display = "none";
+              document.getElementById("sq8").style.display = "none";
+              document.getElementById("sq9").style.display = "none";
+              document.getElementById("loader_5191").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+</body>
 </html>

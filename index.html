@@ -6,6 +6,7 @@
 				<title>Accueil - AH!</title>
 				<link rel="stylesheet" href="CSS/Index/index-style.css">
 				<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			</head>
         </head>
         <body onload="myFunction()" style="margin:0;">
@@ -26,29 +27,42 @@
 			<body>
 					<h1> <span style="font-family:Impact;">Bienvenue sur le site de AH!</h1>
 					   
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#news">News</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li style="float:right"><a class="active" href="#about">About</a></li>
-						  </ul>  
-
-
-                <div class="dropdown">
-                  <button class="dropbtn">Dropdown</button>
-                  <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-                </div> 
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="index.html">Accueil</a>
+  <div class="subnav">
+    <button class="subnavbtn">Projets <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">AH! Server</a>
+      <a href="#deliver">Solahr</a>
+      <a href="#package">AHKSYS</a>
+      <a href="#express">Kribox</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">A propos <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="about.html">Link 1</a>
+      <a href="about.html">Link 2</a>
+      <a href="about.html">Link 3</a>
+      <a href="about.html">Link 4</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+</div>
 					<br/><p>Bienvenue sur le site qui recense et informe a propos de <strong>la plupart</strong> des projets de AH!.</p>
+          <div class="container">
+            <img src="Images/cat.png" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Test</div>
+            </div>
+          </div>
 					<p style="text-align:center;">Copyright : AH!</p> 
           <script>
             var myVar;
             
             function myFunction() {
-              myVar = setTimeout(showPage, 3000);
+              myVar = setTimeout(showPage, 1000);
             }
             
             function showPage() {

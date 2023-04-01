@@ -3,46 +3,52 @@
 		<head>
 				<meta charset="utf-8">
 				<title>Contact - AH!</title>
-				<link rel="stylesheet" href="CSS/index-style.css">
+				<link rel="stylesheet" href="CSS/Contact/contact-style.css">
 				<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			</head>
+		</head>
+        <body onload="myFunction()" style="margin:0;">
+        
+<div id="loader_5191"></div>
+  <div class="loader_5191">
+          <div class="square" id="sq1"></div>
+          <div class="square" id="sq2"></div>
+          <div class="square" id="sq3"></div>
+          <div class="square" id="sq4"></div>
+          <div class="square" id="sq5"></div>
+          <div class="square" id="sq6"></div>
+          <div class="square" id="sq7"></div>
+          <div class="square" id="sq8"></div>
+          <div class="square" id="sq9"></div>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
 			<body>
 					<h1> <span style="font-family:Impact;">Bienvenue sur le site de AH!</h1>
 					   
-						<ul id="menu">
-							<li><a href="index.html">Accueil</a></li>
-							<li>
-								<a href="#">Projets</a>
-								<ul>
-									<li>
-										<a href="ahserver.html">AH! Server</a>
-										<ul>
-										</ul>				
-									</li>
-									<li>
-										<a href="solahr.html">Solahr</a>
-										<ul>
-										</ul>				
-									</li>
-									<li>
-										<a href="ahksys.html">AHKSYS</a>
-										<ul>
-										</ul>				
-									</li>
-									<li>
-										<a href="kribox.html">Kribox</a>				
-										<ul>
-										</ul>	
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="about.html"> A propos</a>	
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>	
-							</li>
-						</ul>
+						<!-- The navigation menu -->
+	<div class="navbar">
+	<a href="index.html">Accueil</a>
+	<div class="subnav">
+	  <button class="subnavbtn">Projets <i class="fa fa-caret-down"></i></button>
+	  <div class="subnav-content">
+		<a href="#bring">AH! Server</a>
+		<a href="#deliver">Solahr</a>
+		<a href="#package">AHKSYS</a>
+		<a href="#express">Kribox</a>
+	  </div>
+	</div>
+	<div class="subnav">
+	  <button class="subnavbtn">A propos <i class="fa fa-caret-down"></i></button>
+	  <div class="subnav-content">
+		<a href="about.html">Link 1</a>
+		<a href="about.html">Link 2</a>
+		<a href="about.html">Link 3</a>
+		<a href="about.html">Link 4</a>
+	  </div>
+	</div>
+	<a href="contact.html">Contact</a>
+  </div>
 <br/>
 <h1> <span style="font-family:Arial;"> Nous contacter :</h1><HR>
 <form>      
@@ -51,9 +57,29 @@
   <textarea name="text" class="feedback-input" placeholder="Entrez la raison pour laquelle vous souhaitez nous contacter"></textarea>
   <input type="submit" value="Envoyer"/>
 </form>
-<img src="Images/Contact/feedbackicon.png" width="600" height="400" alt="Chat logo"/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Contact/feedbackicon.png" width="600" height="400" alt="Chat logo"/><br/>
+<p style="text-align:center;">Copyright : AH!</p>	
 </div>
-
-<p style="text-align:center;">Copyright : AH!</p>
+<script>
+	var myVar;
+	
+	function myFunction() {
+	  myVar = setTimeout(showPage, 1000);
+	}
+	
+	function showPage() {
+	  document.getElementById("sq1").style.display = "none";
+	  document.getElementById("sq2").style.display = "none";
+	  document.getElementById("sq3").style.display = "none";
+	  document.getElementById("sq4").style.display = "none";
+	  document.getElementById("sq5").style.display = "none";
+	  document.getElementById("sq6").style.display = "none";
+	  document.getElementById("sq7").style.display = "none";
+	  document.getElementById("sq8").style.display = "none";
+	  document.getElementById("sq9").style.display = "none";
+	  document.getElementById("loader_5191").style.display = "none";
+	  document.getElementById("myDiv").style.display = "block";
+	}
+	</script>
 </body>
 </html>

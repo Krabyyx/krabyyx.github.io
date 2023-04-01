@@ -28,6 +28,57 @@ h1 {
   font-size: 50px;
   font-family: "Cormorant Garamond", serif;
 }
+/* Main menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+h1
+{
+		text-align: center;
+}
+
+p
+{
+		font-family: Verdana;
+		text-align: center;
+		color: black;
+}
+span
+{
+		text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e0e5ec;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
 
 /*Chargement*/
 @keyframes loader_5191 {
@@ -159,7 +210,7 @@ h1 {
   margin: 0;
 }
 
-/* Add a red background color to navigation links on hover */
+/* Add a green background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: rgb(8, 211, 69);
 }
@@ -192,43 +243,55 @@ h1 {
   display: block;
 }
 
-/*Images avec slider*/
-.container {
-  position: relative;
-  width: 50%;
+
+/*Formulaire Contact*/
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
-.image {
-  display: block;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  height: auto;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgb(8, 211, 69);
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+[type="submit"]:hover { background:#CC4949; }

@@ -28,57 +28,6 @@ h1 {
   font-size: 50px;
   font-family: "Cormorant Garamond", serif;
 }
-/* Main menu */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-h1
-{
-		text-align: center;
-}
-
-p
-{
-		font-family: Verdana;
-		text-align: center;
-		color: black;
-}
-span
-{
-		text-align: center;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #e0e5ec;
-}
-h1 {
-  position: relative;
-  text-align: center;
-  color: #353535;
-  font-size: 50px;
-  font-family: "Cormorant Garamond", serif;
-}
 
 /*Chargement*/
 @keyframes loader_5191 {
@@ -210,7 +159,7 @@ h1 {
   margin: 0;
 }
 
-/* Add a green background color to navigation links on hover */
+/* Add a red background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: rgb(8, 211, 69);
 }
@@ -243,69 +192,43 @@ h1 {
   display: block;
 }
 
-
-/*Formulaire*/
- /* Style inputs, select elements and textareas */
- input[type=text], select, textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Style the container */
+/*Images avec slider*/
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  position: relative;
+  width: 50%;
 }
 
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-  font-family: Arial, Helvetica, sans-serif;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(8, 211, 69);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-} 
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

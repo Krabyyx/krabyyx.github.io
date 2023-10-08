@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+		<head>
+				<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Accueil - Sextant 1D</title>
+				<link rel="stylesheet" href="CSS/Index/index-style.css">
+				<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			</head>
+        </head>
+        <body onload="myFunction()" style="margin:0;">
+        
+<div id="loader_5191"></div>
+  <div class="loader_5191">
+          <div class="square" id="sq1"></div>
+          <div class="square" id="sq2"></div>
+          <div class="square" id="sq3"></div>
+          <div class="square" id="sq4"></div>
+          <div class="square" id="sq5"></div>
+          <div class="square" id="sq6"></div>
+          <div class="square" id="sq7"></div>
+          <div class="square" id="sq8"></div>
+          <div class="square" id="sq9"></div>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+			<body>
+					<h1> <span style="font-family:Arial, Helvetica, sans-serif;">Gestion de demandes délégués Sextant</h1><br/>
+					   
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="index.html">Accueil</a>
+  <div class="subnav">
+    <button class="subnavbtn">Demandes <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#CDC">Conseil de classe</a>
+      <a href="#signaler">Signaler</a>
+      <a href="#ETC">ETC</a>
+      <a href="#ETC">ETC</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">A propos <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="about.html">Link 1</a>
+      <a href="about.html">Link 2</a>
+      <a href="about.html">Link 3</a>
+      <a href="about.html">Link 4</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+</div>
+<!-- FLUID GRID -->
+<ul id="Grid">
+  <li><div class="container">
+    <img src="images/Index/mortarboard.gif" alt="Chat logo" class="image">
+    <div class="overlay">
+      <a style="font-family:Arial, Helvetica, sans-serif;" href="cdc.html" class="text">Conseil de classe</a>
+    </div></li>
+  <li><div class="container">
+    <img src="images/Index/warning.gif" alt="Chat logo"  class="image">
+    <div class="overlay">
+      <a style="font-family:Arial, Helvetica, sans-serif;" href="signaler.html" class="text">Signaler un problème</a>
+    </div></li>
+  <li><div class="container">
+    <img src="images/Index/hourglass.gif" class="image">
+    <div class="overlay">
+      <div style="font-family:Arial, Helvetica, sans-serif;" class="text">Chargement</div>
+    </div></li>
+  <li><div class="container">
+    <img src="images/Index/support.gif" class="image">
+    <div class="overlay">
+      <div style="font-family:Arial, Helvetica, sans-serif;" class="text">Support</div>
+    </div></li>
+  <li><div class="container">
+    <img src="images/Index/mortarboard.gif" class="image">
+    <div class="overlay">
+      <div style="font-family:Arial, Helvetica, sans-serif;" class="text">Conseil de classe</div>
+    </div></li>
+  <li class="placeholder"></li>
+</ul>
+<p style="text-align:center;"><strong>Copyright :</strong> AH! Systems &nbsp;&nbsp;&nbsp;&nbsp; <strong>Version :</strong> CSXS1D V.0.1</p> 
+          <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 1000);
+            }
+            
+            function showPage() {
+              document.getElementById("sq1").style.display = "none";
+              document.getElementById("sq2").style.display = "none";
+              document.getElementById("sq3").style.display = "none";
+              document.getElementById("sq4").style.display = "none";
+              document.getElementById("sq5").style.display = "none";
+              document.getElementById("sq6").style.display = "none";
+              document.getElementById("sq7").style.display = "none";
+              document.getElementById("sq8").style.display = "none";
+              document.getElementById("sq9").style.display = "none";
+              document.getElementById("loader_5191").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+</body>
+</html>
